@@ -1,3 +1,6 @@
+// Author: David Tays
+// Date Created: 7/27/2018
+// Description: child routes
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +10,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  productId = 2345;
 }
