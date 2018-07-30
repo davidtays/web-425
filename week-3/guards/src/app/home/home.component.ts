@@ -3,11 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home',
   template: `
-    <p>
-      home works!
-    </p>
+    <h1 class="home">Davids Home Component</h1>
   `,
-  styles: []
+  styles: [`
+    .home {
+      background-color: lightbrown;
+      border: 10px darkred solid;
+    }
+  `]
 })
 export class HomeComponent implements OnInit {
 
