@@ -1,3 +1,8 @@
+/* Author: David Tays
+   Date:   08/01/18
+   Description: Handling Form Events with observables
+ */
+
 import { Component } from '@angular/core';
 import { debounceTime } from 'rxjs/operators';
 import { FormControl } from "@angular/forms";

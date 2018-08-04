@@ -1,13 +1,14 @@
 /* Author: David Tays
    Date:   08/01/18
-   Description: Handling Form Events with observables
+   Description: async-pipe and observable arrays
  */
 
-import { BrowserModule } from '@angular/platform-browser';
+ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import {ReactiveFormsModule} from "@angular/forms";
+import {FruitService} from "./fruit.service";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [FruitService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
