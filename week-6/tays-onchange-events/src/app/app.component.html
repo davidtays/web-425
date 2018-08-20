@@ -1,10 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-//import { LoginComponent } from '../login/login.component';
-
-@Component({
-  selector: 'app-home',
-  template: `
-  <mat-toolbar class="menu" role="header" color="primary">
+<mat-toolbar class="menu" role="header" color="primary">
   <mat-toolbar-row>
     <button mat-button class="toolbar__icon-button mat-button">
       <mat-icon>web</mat-icon>
@@ -42,49 +36,24 @@ import { Component, OnInit } from '@angular/core';
   </mat-toolbar-row>
 
 </mat-toolbar>
+<mat-sidenav-container fxFlexFill class="sidenav-container" fullscreen>
 
-
-
-<div class="wrapper">
-  <div fxFlex fxLayout="row">
-      <div class="childOfWrapper" fxFlex='20'>0 20%</div>
-      <div class="anotherChildOfWrapper" fxFlex>
-        <app-login></app-login>
+    <mat-sidenav fxLayout="column" mode="side" opened="true">
+      <div fxLayout="column">
+        SIDENAV
       </div>
-  </div>
-</div>
-  `,
-  styles: [`  
-  /* Global */
-  .menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 2;
-      color: white;
-  }
-  .wrapper{
-      padding: 70px 30px;
-      display: block;
-  }
-  
-  
-  /* left sidebar styles */
-    .childOfWrapper { 
-      background-color: cyan; 
-      margin: 0;
-    }
+    </mat-sidenav>
     
-    .anotherChildOfWrapper {
-      background-color: yellow; 
-  `]
-})
-export class HomeComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+    <mat-sidenav-content fxFlexFill class="sidenav-content" fullscreen>
+      <div class="parent">
+        <h2>The Parent</h2>
+          <div>
+            Greeting: <input type="text" [(ngModel)]="theGreeting">
+          </div>
+          <div>
+            User name: <input type="text" [(ngModel)]="theUser.name">
+          </div>
+          <app-child [greeting]="theGreeting" [user]="theUser"></app-child>
+        </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

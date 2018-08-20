@@ -1,0 +1,28 @@
+/* Global */
+.menu {
+  background-color: blueviolet;
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2; 
+}
+.matMenu {
+  padding: 70px 0 0 150px;
+}
+
+.sidenav-container{    
+  text-align: center;
+  padding-top: 70px;
+}
+mat-sidenav {
+  margin-top: 70px;
+  padding: 20px 50px;
+  background-color: cadetblue;
+  display: block;
+}
+
+.top{
+  padding: 70px;
+}
+  
