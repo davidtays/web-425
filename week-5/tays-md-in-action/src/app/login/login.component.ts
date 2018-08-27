@@ -38,7 +38,7 @@ import { Component, OnInit } from '@angular/core';
     .frm-login-body { display: flex; flex-direction: column; margin-top: 15px; }
     .btn-login { background-color: gray; color: white; }
     .frm-login-actions { text-align: right; }          
-    }
+    
   `]
 })
 export class LoginComponent implements OnInit {

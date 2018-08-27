@@ -1,0 +1,54 @@
+
+  .menu {
+    background-color: darkgray;
+    position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1; 
+  }
+  
+  
+  mat-sidenav-container{    
+    position: fixed;
+    top: 60px;
+    bottom: 60px;
+    left: 0;
+    right: 0;    
+  }
+  mat-sidenav {
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    background: rgba(255, 0, 0, 0.5);
+  }
+  mat-card{
+    width: 50%; 
+    margin-top: 100px;
+    margin-left: 100px;
+    border: 1px solid black;
+  }
+  mat-card div{
+    padding: 10px 0;
+  }
+  form{
+      text-align: left;
+
+  }
+  .right{
+    text-align: right;
+  }
+  mat-sidenav-content { 
+    width: auto;
+    background: lightblue;
+    margin-top: 65px;
+    margin-left: 200px;
+  }
+  .error {
+      color: red;
+  }
+  .hasError {
+      border: 1px solid red;
+  }
