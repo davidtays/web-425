@@ -1,0 +1,15 @@
+{
+    "name": "tays-ts-server",
+    "description": "Node and Express",
+    "private": true,
+    "scripts": {},
+    "dependencies": {        
+        "body-parser": "^1.18.3",
+        "express": "^4.16.3"
+    },
+    "devDependencies": {
+        "@types/express": "^4.16.0",
+        "@types/node": "^10.9.4",
+        "typescript": "^2.8.3"
+    }
+}
