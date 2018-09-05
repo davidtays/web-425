@@ -3,7 +3,7 @@
         "module": "commonjs",
         "outDir": "build",
         "target": "es6",
-        "sourceMap": true,
+        "sourceMap": true
     },
     "exclude": [
         "node_modules"
