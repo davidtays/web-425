@@ -1,0 +1,47 @@
+
+  
+  
+  mat-sidenav-container{    
+    position: fixed;
+    top: 60px;
+    bottom: 60px;
+    left: 0;
+    right: 0; 
+    padding-left: 80px;
+    z-index: -1;   
+  }
+  mat-sidenav {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    background: rgba(255, 0, 0, 0.5);
+  }
+  mat-card{
+    width: 50%; 
+    margin-top: 30px;
+    margin-left: 10px;
+    
+  }
+  mat-card div{
+    padding: 10px 0;
+  }
+  .mat-checkbox-inner-container {
+    height: 50px!important;
+    width: 50px!important;
+  }
+  form{
+      text-align: center;
+
+  }
+  .right{
+    text-align: right;
+  }
+  mat-sidenav-content { 
+    width: auto;
+    background: lightblue;
+    margin-top: 70px;
+   
+  }
+   
